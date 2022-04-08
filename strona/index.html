@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+        <head>
+            <meta charset="utf-8"/>
+            <title>zieleniewo</title>
+            <meta content="width=device-width, initial-scale=1" name="viewport"/>
+            <meta content="Webflow" name="generator"/>
+            <link href="style.css" rel="stylesheet" type="text/css"/>
+            <script src="script/jquery.js"></script>
+       </head>
+    <body class="body">
+        <div class="div-block"></div>
+        <div id="w-node-_5d492a89-366a-61d4-cebb-0ffa1548596c-f7816dbf" class="title w-container">
+            <div class="text-block-2">Sonda Zieleniewo</div>
+        </div>
+        <div class="w-layout-grid grid">
+            <div id="w-node-_288b9ce0-515c-8ff0-6332-90b1e8acd844-f7816dbf" class="icon-container w-container"><img src="media/termometr.png" loading="lazy" sizes="(max-width: 479px) 68vw, 32vw" class="image"/>
+                <div class="sens_value" id="temp_val">0<br/><br/></div>
+            </div>
+            <div id="w-node-_7b1fb461-6754-d57c-3c55-8ed74bdd0e18-f7816dbf" class="icon-container w-container"><img src="media/higrometr.png" loading="lazy" sizes="(max-width: 479px) 68vw, 32vw" class="image"/>
+                <div class="sens_value" id="hig_val">50<br/><br/></div>>
+            </div>
+            <div id="w-node-_45063d9b-01b1-502f-570c-6f3032fbc9a7-f7816dbf" class="icon-container-copy w-container"><img src="media/barometr.png" loading="lazy" sizes="(max-width: 479px) 68vw, 32vw" class="image"/>
+                <div class="sens_value" id="press_val">1050<br/><br/></div>
+            </div>
+        </div>
+        <script>
+             $.get("update", function(data, status){
+                alert("Data: " + data + "\nStatus: " + status);
+            });
+        </script>
+</html>

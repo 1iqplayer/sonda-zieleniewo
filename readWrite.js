@@ -22,7 +22,7 @@ function writeDataFloat(path, data){
 
 function readDataFloat(path){
 	let binary = fs.readFileSync(path)
-	let float_arr = new Float32Array(binary)
+	let float_arr = new Float32ArrayBE(binary, 0, 4)
 	console.log(float_arr.length)
 }
 

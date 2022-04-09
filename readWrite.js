@@ -28,3 +28,5 @@ function readDataFloat(path){
 
 writeDataFloat('testData', [23.20, 40.52, 1001.38])
 readDataFloat('testData')
+
+// single comment
